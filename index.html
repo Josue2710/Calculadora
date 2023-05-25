@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="result">
+      <input type="text" id="result" readonly>
+    </div>
+    <div class="history" id="history"></div>
+    <div class="button-row">
+      <button class="button" onclick="addToResult('7')">7</button>
+      <button class="button" onclick="addToResult('8')">8</button>
+      <button class="button" onclick="addToResult('9')">9</button>
+      <button class="button" onclick="addToResult('/')">/</button>
+    </div>
+    <div class="button-row">
+      <button class="button" onclick="addToResult('4')">4</button>
+      <button class="button" onclick="addToResult('5')">5</button>
+      <button class="button" onclick="addToResult('6')">6</button>
+      <button class="button" onclick="addToResult('*')">*</button>
+    </div>
+    <div class="button-row">
+      <button class="button" onclick="addToResult('1')">1</button>
+      <button class="button" onclick="addToResult('2')">2</button>
+      <button class="button" onclick="addToResult('3')">3</button>
+      <button class="button" onclick="addToResult('-')">-</button>
+    </div>
+    <div class="button-row">
+      <button class="button" onclick="addToResult('0')">0</button>
+      <button class="button" onclick="addToResult('.')">.</button>
+      <button class="button" onclick="calculateResult()">=</button>
+      <button class="button" onclick="addToResult('+')">+</button>
+    </div>
+    <div class="button-row">
+      <button class="button clear-button" onclick="clearResult()">C</button>
+      <button class="button clear-button" onclick="clearHistory()">Borrar Historial</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
